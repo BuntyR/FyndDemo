@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_13sdp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivAccountLogo"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:actualImageScaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            fresco:placeholderImage="@drawable/logo"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/ivAccountLogo"
+            app:layout_constraintRight_toLeftOf="@+id/tvFollow"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Bunty Rupela " />
+
+        <TextView
+            android:id="@+id/tvFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:gravity="end"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintLeft_toRightOf="@id/tvAccount"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Follow" />
+
+        <TextView
+            android:id="@+id/tvScreenName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toRightOf="@id/ivAccountLogo"
+            app:layout_constraintTop_toBottomOf="@id/tvAccount"
+            tools:text="Bunty Rupela Account Name" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:autoLink="web"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@id/tvScreenName"
+            tools:text="Bunty Rupela Account Name huiwiud iuahuid jhjhi adsuihuid ashuih dsauihuih dashiuhiudas uhids hi" />
+
+
+        <TextView
+            android:id="@+id/tvRetweets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableLeft="@drawable/ic_repeat_black_24dp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTweet"
+            tools:text="578" />
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableLeft="@drawable/ic_favorite_border_black_24dp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toRightOf="@+id/tvRetweets"
+            app:layout_constraintTop_toBottomOf="@id/tvTweet"
+            tools:text="578" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

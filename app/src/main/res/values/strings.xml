@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fynd Demo-Bunty</string>
+    <string name="login_text">Fynd Demo App\nBy Bunty Rupela</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">YipqdqZPjcvuznDPIFId99klz</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">r8LlCWVV23UX8hxi9DoLVQ9nb1hnAidE9BQrVUr91xzA7gvR4C</string>
+    <string name="title">Fynd Demo - By Bunty Rupela</string>
+</resources>
